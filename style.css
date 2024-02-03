@@ -1,0 +1,253 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*::before,*::after{
+	box-sizing:border-box;
+}
+/* CSS Reset end */
+
+.attribution { font-size: 11px; text-align: center; margin: 20px; color:white;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    display:flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+	background: hsl(235, 18%, 26%);
+	color: black;
+	font-size: 16px;
+}
+
+.main{
+    width: 800px;
+    display:flex;
+    background: white;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.pic{
+    width: 350px;
+    background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+    border-radius: 25px;
+    background-size: cover;
+}
+
+
+.content{
+    width: 450px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.content h1{
+    font-size: 40px;
+    margin: 0px 0px 20px;
+    font-weight: 700;   
+    color:hsl(234, 29%, 20%);
+}
+
+.content p{
+    margin: 0px 0px 20px; 
+    line-height: 1.3rem;
+}
+
+.item{
+    display:flex;
+    align-items: center ;
+    margin: 0px 0px 13px;    
+}
+
+.item p{
+    margin: 0px 0px 0px 10px;  
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.label{
+    display:flex;
+    justify-content: space-between;
+}
+
+.label p{
+    display:none;
+    color:hsl(4, 100%, 67%);
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.email{
+    padding: 15px;
+    border:1px solid hsl(231, 7%, 60%);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.error{
+    padding: 15px;
+    border:1px solid hsl(4, 100%, 67%);
+    background: hsl(4, 100%, 67%,0.2);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.error::placeholder {
+    color: hsl(4, 100%, 67%);
+}
+
+.btn, .btn:hover{
+    padding: 15px;
+    background: hsl(234, 29%, 20%) ;
+    color:white;
+    border-style: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: hsl(4, 100%, 67%) ;
+}
+
+.success{
+    display:none;
+    flex-direction: column;
+    background: white;
+    width: 450px;
+    padding: 45px;
+    border-radius: 20px;
+}
+
+.success h1{
+    font-size: 45px;
+    font-weight: 700;
+    color:hsl(234, 29%, 20%);
+    margin-top: 24px;
+}
+
+.success p{
+    margin-top: 20px;
+    line-height: 1.3rem;
+}
+
+.success span{
+    font-weight: 700;
+}
+
+.s_btn, .s_btn:hover{
+    margin-top: 34px;
+    padding: 15px;
+    background: hsl(234, 29%, 20%) ;
+    color:white;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.s_btn:hover{
+    background: hsl(4, 100%, 67%) ;    
+}
+
+.success img{
+    width: 50px;
+}
+
+@media(max-width: 430px){
+    body{
+        background: white;
+    }
+   
+    .main{
+        max-width: 100%;
+        flex-direction: column-reverse;
+        padding: 10px;
+        align-items: center;
+    }
+    .pic{
+        max-width:98%;
+        height: 330px;
+        background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+    }
+    .content{
+        max-width:100%;
+    }
+    .success{
+        max-width:100%
+    }
+    .success p {
+        line-height:1.6rem;
+    }
+    .attribution {
+        color:black;
+    }
+    .success{
+        justify-content: space-between;
+        height: 650px;
+    }
+
+}
+
+
+
+
