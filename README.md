@@ -2,10 +2,6 @@
 
 用來判斷使用者輸入的 Email 是否正確，並搭配簡易的響應式設計
 
-## Layout 🌼
-
-![Layout](./assets/images/layout.png)
-
 ## Demo 🐻💥
 
 <!-- <div style="display: flex; justify-content:center;">
@@ -27,6 +23,10 @@
 </div> -->
 ![demo](./assets/images/demo.gif)
 <https://yudododo.github.io/newsletter-sign-up-with-success-message-yu/>
+
+## Layout 🌼
+
+![Layout](./assets/images/layout.png)
 
 ## The challenge 🔥
 
